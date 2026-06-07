@@ -13,14 +13,19 @@ This is a micro-engine written entirely in **Pure x86_64 Assembly (NASM)**. No s
 
 To assemble, link, and test this piece of raw engineering on your machine:
 
-```bash
+
 # 1. Assemble the source into an ELF64 object
+```bash
 nasm -f elf64 axiom_core_silicon.asm -o axiom_core_silicon.o
+```
 
-# 2. Link the object directly without linking C libraries
+# 2. Link the object directly without linking 
+```bash
+C libraries
 ld axiom_core_silicon.o -o axiom_core_silicon
-
+```
 # 3. Execute with nanosecond latency
+```bash
 ./axiom_core_silicon
 ```
 AXIOM SYSTEMS © 2026 — Domination from the upper AI layers down to the lowest transistor.
