@@ -19,12 +19,12 @@ To assemble, link, and test this piece of raw engineering on your machine:
 nasm -f elf64 axiom_core_silicon.asm -o axiom_core_silicon.o
 ```
 
-# 2. **Link the object directly without linking** 
+ 2. **Link the object directly without linking** 
 ```bash
 C libraries
 ld axiom_core_silicon.o -o axiom_core_silicon
 ```
-# 3. **Execute with nanosecond latency**
+ 3. **Execute with nanosecond latency**
 ```bash
 ./axiom_core_silicon
 ```
